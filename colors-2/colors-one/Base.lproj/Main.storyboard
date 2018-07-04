@@ -89,9 +89,6 @@
                                 <state key="normal" image="Restart">
                                     <color key="titleColor" red="0.62685090300000001" green="0.32102441790000003" blue="0.17544573550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="resumeButton:" destination="F87-Oc-LuT" eventType="touchUpInside" id="Yp4-El-rqo"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixj-JS-stj" userLabel="Pause">
                                 <rect key="frame" x="311" y="20" width="48" height="41"/>
@@ -139,8 +136,12 @@
                         <viewLayoutGuide key="safeArea" id="hIN-80-Jtm"/>
                     </view>
                     <connections>
-                        <outlet property="home" destination="wGM-O9-P34" id="eVq-wl-GUQ"/>
-                        <outlet property="resume" destination="iDk-i4-0hn" id="FyX-f8-BF0"/>
+                        <outlet property="homeButton" destination="wGM-O9-P34" id="kPx-2t-OnN"/>
+                        <outlet property="pauseButton" destination="Ixj-JS-stj" id="sIK-UP-Gea"/>
+                        <outlet property="restartButton" destination="iDk-i4-0hn" id="hVw-dv-Qrq"/>
+                        <outlet property="resumeButton" destination="a1h-gE-riL" id="phQ-g1-7rK"/>
+                        <outlet property="scoreLabel" destination="BdH-3e-C4Q" id="XEU-UG-BI5"/>
+                        <outlet property="timerLabel" destination="0cV-sW-VHK" id="9gz-xT-9Xt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-fV-F9y" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,7 +15,7 @@ class GameOver: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scoreLabel.text = "HELLO"
+//        scoreLabel.text! = "HELLO"
     }
     
     override func didReceiveMemoryWarning() {
