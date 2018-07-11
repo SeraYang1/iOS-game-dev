@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hn3-Q4-kgh">
-                                <rect key="frame" x="119" y="321.5" width="136" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hn3-Q4-kgh">
+                                <rect key="frame" x="119" y="418" width="136" height="44"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="CXZ-Oo-XpR"/>
@@ -33,6 +33,10 @@
                                     <segue destination="F87-Oc-LuT" kind="show" id="vCh-sp-5re"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h14-AB-28I">
+                                <rect key="frame" x="64" y="153" width="247" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.76336949576610436" green="0.93060827886023889" blue="0.96595415609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -49,6 +53,7 @@
         <!--Timed View-->
         <scene sceneID="3xd-Df-qWJ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-fV-F9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="F87-Oc-LuT" customClass="TimedView" customModule="colors_one" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qf8-ha-eHk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -56,7 +61,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGM-O9-P34">
                                 <rect key="frame" x="66" y="506" width="80" height="65"/>
-                                <color key="backgroundColor" red="0.98721050126903553" green="0.88847621102483321" blue="0.71102853063101701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98721050129999999" green="0.49490754862887237" blue="0.4697580840305805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="dbO-Ta-bXe"/>
                                     <constraint firstAttribute="width" constant="80" id="vBg-f7-Ahm"/>
@@ -70,7 +75,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1h-gE-riL" userLabel="Resume">
                                 <rect key="frame" x="129" y="374" width="116" height="106"/>
-                                <color key="backgroundColor" red="0.98721050129999999" green="0.88847621099999996" blue="0.71102853060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98721050129999999" green="0.49490754862887237" blue="0.4697580840305805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="Jdf-aX-BeT"/>
                                     <constraint firstAttribute="height" constant="106" id="grC-8d-Own"/>
@@ -81,7 +86,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-i4-0hn">
                                 <rect key="frame" x="241" y="506" width="80" height="65"/>
-                                <color key="backgroundColor" red="0.98431372549019602" green="0.8666666666666667" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98721050129999999" green="0.49490754862887237" blue="0.4697580840305805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="nQJ-Ww-HF1"/>
                                     <constraint firstAttribute="width" constant="80" id="sPy-qb-4xm"/>
@@ -104,14 +109,14 @@
                                     <action selector="resumeButton:" destination="F87-Oc-LuT" eventType="touchUpInside" id="PtD-ud-up3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-3e-C4Q" userLabel="Score">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-3e-C4Q" userLabel="Score">
                                 <rect key="frame" x="34" y="30" width="69" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cV-sW-VHK" userLabel="Timer">
-                                <rect key="frame" x="140.5" y="76" width="94" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cV-sW-VHK" userLabel="Timer">
+                                <rect key="frame" x="139" y="76" width="97.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -144,7 +149,6 @@
                         <outlet property="timerLabel" destination="0cV-sW-VHK" id="9gz-xT-9Xt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-fV-F9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1288.8" y="98.50074962518741"/>
         </scene>
@@ -222,6 +226,6 @@
         <image name="Restart" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kFz-kS-LxM"/>
+        <segue reference="rUp-2I-7az"/>
     </inferredMetricsTieBreakers>
 </document>
